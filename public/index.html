@@ -1,30 +1,44 @@
-<!DOCTYPE html>
-
-<html>
-
-   <head>
-      <title>Clementine.js - The elegant and lightweight full-stack boilerplate.</title>
-      <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
-      <link href="/public/css/main.css" rel="stylesheet" type="text/css">  
-   </head>
-
-   <body>
-      <div class="container">
-         <img src="/public/img/clementine_150.png" />
-         <br />
-         <p class="clementine-text">Clementine.js</p>
-      </div>
-
-      <div class="container">
-         <p>You have clicked the button <span id="click-nbr"></span> times.</p>   
-         <br />
-         <div class="btn-container">
-            <button type="submit" class="btn btn-add">CLICK ME!</button>
-            <button class="btn btn-delete">RESET</button>
-         </div>
-      </div>
-
-      <script type="text/javascript" src="/controllers/clickController.client.js"></script>   
-   </body>
-
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+      <style>
+      .fcc-brand > img {
+          display: block;
+          margin-bottom: 40px;
+      }
+      .nav-logo {
+        width: 400;
+      }
+      </style>
+  </head>
+  <body>
+<div class="container">
+    <a href="http://www.freecodecamp.com/roelver" class="fcc-brand">
+      <img alt="Freecodecamp.com logo" src="/public/img/fcclogo.png" class="nav-logo"/>
+    </a>
+    <h1 class="header">Header Microservice</h1>
+    <p>By Roel Verbunt |
+        <a href="https://github.com/roelver/fcc-header-micro">Project GitHub</a></p>
+    <blockquote>User Stories:
+        <ol>
+            <li>I can get the IP address, language and operating system for my browser.</li>
+        </ol>
+    </blockquote>
+    <h2>Example usage:</h2>
+    <code>https://fcc-header-micro.herokuapp.com/info</code><br>
+    <h2>Example output:</h2>
+    <code>{ "ipaddress": ":192.168.178.12", "language": "nl-NL", "software": "Macintosh; Intel Mac OS X 10_11_3" }</code><br>
+</div>
+  </body>
 </html>
